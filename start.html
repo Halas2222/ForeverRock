@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Domek</title>
+    <style>
+
+        span {
+            display: block;
+            background-color: brown;
+            width: 100px;
+            height: 50px;
+            border: 2px solid black;
+            line-height: 50px;
+            padding-left: 10px;
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            cursor: pointer;
+            transition: 1s;
+        }
+
+        div {
+            position: absolute;
+            top: 90%;
+            left: 10%;
+            width: 0;
+            height: 0;
+            background-color: brown;
+            transition: 1s;
+        }
+
+        div:nth-of-type(2) {
+            transition-delay: .2s;
+        }
+
+        div:nth-of-type(3) {
+            transition-delay: .3s;
+        }
+
+        div:nth-of-type(4) {
+            transition-delay: .5s;
+        }
+
+        div:nth-of-type(5) {
+            transition-delay: .7s;
+        }
+        div:nth-of-type(6) {
+            transition-delay: .9s;
+        }
+
+        span:hover ~ div:nth-of-type(1) {
+            top:50%;
+            left: 50%;
+            width: 50vh;
+            height: 30vh;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+        }
+
+
+        span:hover ~ div:nth-of-type(2) {
+            top:calc(50% - 15vh);
+            left: 50%;
+            width: 35vh;
+            height: 35vh;
+            background-color: black;
+            
+            transform: translate(-50%, -50%) rotate(45deg);
+        }
+       
+        span:hover ~ div:nth-of-type(3) {
+            top:45%;
+            left: 45%;
+            width: 10vh;
+            height: 10vh;
+            background-color:blue;
+            z-index: 2;
+            transform: translate(-50%, -50%);
+        }
+
+        span:hover ~ div:nth-of-type(4) {
+            top:45%;
+            left: 55%;
+            width: 10vh;
+            height: 10vh;
+            background-color:blue;
+            z-index: 3;
+            transform: translate(-50%, -50%);
+        }
+
+        span:hover ~ div:nth-of-type(4) {
+            top:45%;
+            left: 55%;
+            width: 10vh;
+            height: 10vh;
+            background-color:blue;
+            z-index: 3;
+            transform: translate(-50%, -50%);
+        }
+
+        span:hover ~ div:nth-of-type(5) {
+            top:55%;
+            left: 50%;
+            width: 10vh;
+            height: 15vh;
+            background-color:gray;
+            z-index: 4;
+            transform: translate(-50%, -50%);
+        }
+
+        span:hover ~ div:nth-of-type(6) {
+            top:20%;
+            left: 55%;
+            width: 5vh;
+            height: 10vh;
+            background-color:indianred;
+            z-index: -1;
+            transform: translate(-50%, -50%);
+        }
+
+        
+    </style>
+
+</head>
+
+<body>
+    <span>BUDUJEMY</span>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</body>
+
+</html>
